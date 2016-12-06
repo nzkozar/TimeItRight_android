@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Time It Right</string>
+
+    <!-- AdMob -->
+    <string name="admob_app_id">ca-app-pub-5244424663522296~7960531961</string>
+    <string name="banner_ad_levels_id">ca-app-pub-5244424663522296/9561138767</string>
+    <string name="banner_ad_interlevel_id">ca-app-pub-5244424663522296/6350320361</string>
+    <string name="banner_ad_halloftime_id">ca-app-pub-5244424663522296/6210719568</string>
+    <string name="banner_ad_home_id">ca-app-pub-5244424663522296/5475689568</string>
+    
+    <!-- Main preferences -->
+    <string name="main_preferences">com.ak93.timeit.main_preferences</string>
+    <string name="main_pref_tut_shown">TUTORIAL_SHOWN</string>
+    <string name="main_pref_autologin">AUTO_LOGIN</string>
+    <!-- AboutActivity screen -->
+    <string name="string_about_app">
+        Time It Right is a game about timers and reaction times.\n\n
+        It tests the player\'s reaction time and ability to perceive time.\n
+        Apart from its core game principle, Time It Right is a project that started with one primary idea in mind:\n
+        To build a game, with core functionality written completely in native Android code. No external game libraries, just pure Android.
+    </string>
+
+    <!-- Tutorial -->
+    <string name="string_tutorial_continue_button">Continue</string>
+    <string-array name="strings_tutorial_slide_texts" formatted="false">
+        <item>Here\'s the deal,\n you have some timers.</item>
+        <item>Start a timer by pressing \"Time!\"</item>
+        <item>Start the next one before the active timer reaches it…</item>
+        <item>…and you\'ll get points if the timers are less than one second apart!</item>
+        <item>If you miss the timing…\n…you lose!</item>
+        <item>You\'ll get between 0 and 100 points for each timer.</item>
+        <item>Each level unlocks when you have gained at least one star on the previous one.</item>
+        <item>You get one star for 30% points, two for 60% and three stars for 90%.</item>
+    </string-array>
+
+    <!-- Home screen -->
+    <string name="string_menu_play">Time It!</string>
+    <string name="string_menu_play_hard">Time It Blind!</string>
+    <string name="string_menu_score">Hall of Time</string>
+    <string name="string_menu_tutorial">How to Time?</string>
+    <string name="string_menu_about">About</string>
+
+    <!-- mid level -->
+    <string name="string_mid_menu">Quit</string>
+    <string name="string_mid_highscore">New Highscore!</string>
+    <string name="string_mid_gameover">Game over!</string>
+    <string name="string_mid_to_menu">Quit</string>
+    <string name="string_mid_summary_score">Score:</string>
+    <string name="string_mid_summary_total">Total:</string>
+    <string name="string_mid_next_level">Next level in: %1$ds</string>
+    <string name="string_mid_summary_level">Level %1$d</string>
+
+    <!-- Play -->
+    <string name="KEY_START_FROM_LVL">KEY_START_FROM_LVL</string>
+    <string name="string_time_it_button">Time!</string>
+    <string name="string_subtitle_score">lvl %1$d %2$d</string>
+    <string name="string_quit_game">Do you really want to quit this game?
+        Your score will not be saved!</string>
+
+    <string name="string_quit_game_title">Quit?</string>
+    <string name="string_quit_game_quit">Quit!</string>
+    <string name="string_quit_game_cancel">Back</string>
+
+    <!-- Score preferences -->
+    <string name="score_preferences">com.ak93.timeit.score_preferences</string>
+    <string name="KEY_BEST_TOTAL_SCORE">BEST_TOTAL_SCORE</string>
+    <string name="KEY_BEST_ROW_SCORE">BEST_ROW_SCORE</string>
+    <string name="KEY_BEST_LVL">BEST_LVL</string>
+    <string name="KEY_LEVEL_SCORE">KEY_LEVEL_SCORE_</string>
+    <string name="KEY_AVERAGE_TIMER_TOTAL_SCORE">KEY_AVERAGE_TIMER_TOTAL_SCORE</string>
+    <string name="KEY_AVERAGE_TIMER_TOTAL_TIMERS">KEY_AVERAGE_TIMER_TOTAL_TIMERS</string>
+
+    <!-- Scoreboard -->
+    <string name="string_best_game">Best game:</string>
+    <string name="string_best_timer">Best timer score:</string>
+    <string name="string_average_timer">Average timer score:</string>
+    <string name="string_best_lvl">Best level:</string>
+    <string name="string_reset_score_alert_message">Do you really want to reset all game scores,
+        including unlocked levels?</string>
+    <string name="string_reset_score_positive_button">Reset</string>
+    <string name="string_reset_score_negative_button">No</string>
+
+    <!-- AboutActivity -->
+    <string name="string_about_label1">Android app &amp; concept by&#160;</string>
+    <string name="string_about_label2">Graphical design by:&#160;</string>
+
+    <string name="string_about_value1">Anže Kožar</string>
+    <string name="string_about_value2">Martin Cimerman &amp; Anže Kožar</string>
+
+
+    <string name="sign_in_explanation">Sign with Google to upload your achievements and share with friends.</string>
+    <string name="you_are_signed_in">You are signed in with Google.</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signin_other_error">There was an issue with sign in. Please try again later.</string>
+</resources>

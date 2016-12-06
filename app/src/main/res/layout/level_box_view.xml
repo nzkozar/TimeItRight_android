@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_bg"
+    android:padding="5dp"
+    android:layout_margin="10dp">
+
+        <com.ak93.timeit.views.FontView
+            android:id="@+id/levelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/color_text_light"
+            android:textSize="10pt"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            app:customFont="LatoRegular.ttf"
+            />
+
+        <com.ak93.timeit.views.FontView
+            android:id="@+id/scoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3566/5000"
+            android:textColor="@color/color_text_light"
+            android:textSize="6pt"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            app:customFont="LatoLight.ttf"
+            android:layout_margin="2dp"
+            />
+
+        <ImageView
+            android:id="@+id/scoreStars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelText"
+            android:layout_above="@id/scoreText"
+            android:src="@drawable/star0"
+            android:scaleType="fitCenter"
+            />
+</merge>

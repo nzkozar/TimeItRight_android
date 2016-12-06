@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_bg">
+
+    <!-- Level info -->
+    <com.ak93.timeit.views.FontView
+        android:id="@+id/play_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:textColor="@color/color_text_grey"
+        android:textStyle="bold"
+        android:textSize="15pt"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:text="@string/string_menu_play"
+        app:customFont="LatoRegular.ttf"
+        />
+
+    <com.ak93.timeit.views.FontView
+        android:id="@+id/play_level_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:textColor="@color/color_text_grey"
+        android:textSize="8pt"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/play_title"
+        android:text="@string/string_subtitle_score"
+        app:customFont="LatoLight.ttf"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_interlevel_id">
+    </com.google.android.gms.ads.AdView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/mid_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/adView">
+
+        <com.ak93.timeit.views.FontView
+            android:id="@+id/but_next_level"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/string_mid_next_level"
+            style="@style/Style_HomeScreenButton"
+            app:customFont="LatoLight.ttf"
+            />
+
+        <com.ak93.timeit.views.FontView
+            android:id="@+id/but_main_menu"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/string_mid_menu"
+            style="@style/Style_HomeScreenButton"
+            app:customFont="LatoLight.ttf"
+            />
+    </LinearLayout>
+
+
+    <!-- Summary -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/play_level_text"
+        android:layout_above="@id/mid_buttons"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="50dp">
+
+        <com.ak93.timeit.views.FontView
+            android:id="@+id/mid_level_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/string_mid_highscore"
+            android:textSize="20pt"
+            android:textColor="@color/color_text_light"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:customFont="LatoLight.ttf"
+            />
+        
+        <com.ak93.timeit.views.FontView
+            android:id="@+id/mid_summary_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/style_text_midlevel_summary_level"
+            android:text="@string/string_mid_summary_level"
+            app:customFont="LatoThin.ttf"
+            />
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_text_light"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Summary score -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            >
+            <com.ak93.timeit.views.FontView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/style_text_midlevel_summary_left"
+                android:text="@string/string_mid_summary_score"
+                android:layout_weight="1"
+                app:customFont="LatoThin.ttf"
+                />
+
+            <com.ak93.timeit.views.FontView
+                android:id="@+id/mid_summary_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/style_text_midlevel_summary_right"
+                android:text="266"
+                android:layout_weight="1"
+                app:customFont="LatoThin.ttf"
+                />
+
+        </LinearLayout>
+        <!-- Summary total -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            >
+            <com.ak93.timeit.views.FontView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/style_text_midlevel_summary_left"
+                android:text="@string/string_mid_summary_total"
+                android:layout_weight="1"
+                app:customFont="LatoThin.ttf"
+                />
+
+            <com.ak93.timeit.views.FontView
+                android:id="@+id/mid_summary_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/style_text_midlevel_summary_right"
+                android:text="266"
+                android:layout_weight="1"
+                app:customFont="LatoThin.ttf"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_text_light"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

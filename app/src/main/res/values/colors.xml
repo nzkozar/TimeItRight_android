@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_bg">#3399ff</color>
+    <color name="color_play_row_text_first">#ffffff</color>
+    <color name="color_play_row_text_misssed">#cb1e58</color>
+    <color name="color_play_row_text">#a1c8ea</color>
+    <color name="color_text_light">#FFFFFF</color>
+    <color name="color_text_grey">#cccccc</color>
+    <color name="color_text_dark">#000000</color>
+</resources>

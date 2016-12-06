@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ak93.timeit.activities.Play"
+    android:background="@color/color_bg">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/button_back"
+        />
+
+    <com.ak93.timeit.views.FontView
+        android:id="@+id/play_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:textColor="@color/color_text_light"
+        android:textStyle="bold"
+        android:textSize="15pt"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:text="@string/string_menu_play"
+        app:customFont="LatoRegular.ttf"
+        />
+
+    <com.ak93.timeit.views.FontView
+        android:id="@+id/play_level_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:textColor="@color/color_text_light"
+        android:textSize="8pt"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/play_title"
+        android:text="@string/string_subtitle_score"
+        app:customFont="LatoLight.ttf"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_list"
+        android:layout_below="@+id/play_level_text"
+        android:layout_above="@+id/but_timeit"
+        android:scrollbars="none"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.ak93.timeit.views.FontView
+        android:id="@+id/but_timeit"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:textSize="15pt"
+        android:text="@string/string_time_it_button"
+        android:textColor="@color/color_text_light"
+        android:gravity="center"
+        android:padding="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_home_but"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:keepScreenOn="true"
+        app:customFont="LatoLight.ttf"
+        />
+</RelativeLayout>

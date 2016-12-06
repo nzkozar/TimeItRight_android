@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_bg">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/button_back"
+        android:layout_margin="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/title_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/time_it_up_icon"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/externalLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/gplay_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/gplay_icon"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/github_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/github_icon"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/fb_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/fb_icon"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/title_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <com.ak93.timeit.views.FontView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="@string/string_about_app"
+                android:textColor="@color/color_text_light"
+                app:customFont="LatoRegular.ttf"
+                android:gravity="center"
+                android:id="@+id/fontView" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+                <com.ak93.timeit.views.FontView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/string_about_label1"
+                    android:textColor="@color/color_text_light"
+                    app:customFont="LatoRegular.ttf"
+                    />
+                <com.ak93.timeit.views.FontView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/string_about_value1"
+                    android:textColor="@color/color_text_light"
+                    app:customFont="LatoRegular.ttf"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+                <com.ak93.timeit.views.FontView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/string_about_label2"
+                    android:textColor="@color/color_text_light"
+                    app:customFont="LatoRegular.ttf"
+                    />
+                <com.ak93.timeit.views.FontView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/string_about_value2"
+                    android:textColor="@color/color_text_light"
+                    app:customFont="LatoRegular.ttf"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
