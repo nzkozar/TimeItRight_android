@@ -35,7 +35,8 @@ import java.util.ArrayList;
  * This activity displays the Tutorial for the game
  */
 
-public class TutorialActivity extends Activity implements AppConstants, View.OnClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+public class TutorialActivity extends Activity implements AppConstants, View.OnClickListener,
+        GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
 
     private ViewPager mViewPager;
@@ -52,7 +53,8 @@ public class TutorialActivity extends Activity implements AppConstants, View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
         // Create the Google Api Client with access to Games
@@ -261,7 +263,7 @@ public class TutorialActivity extends Activity implements AppConstants, View.OnC
             ImageView slideImage = (ImageView)v.findViewById(R.id.slideImage);
 
             slideText.setText(texts[position]);
-            slideImage.setImageDrawable(ContextCompat.getDrawable(mContext,drawableIds.get(position)));
+            slideImage.setImageResource(drawableIds.get(position));
 
             container.addView(v,0);
             return v;

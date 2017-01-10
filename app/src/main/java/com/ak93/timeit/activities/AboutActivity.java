@@ -106,7 +106,7 @@ public class AboutActivity extends Activity implements AppConstants, View.OnClic
                 break;
             case R.id.github_icon:
                 Intent githubIntent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://github.com/nzkozar"));
+                        Uri.parse("https://github.com/nzkozar/TimeItRight_android"));
                 startActivity(githubIntent);
                 break;
             case R.id.gplay_icon:
