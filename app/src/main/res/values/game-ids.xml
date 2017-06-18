@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <string name="app_id">734009650777</string>
+    <string name="package_name">com.ak93.timeit</string>
+    <string name="achievement_learn_to_time">CgkI2dyJs64VEAIQAQ</string>
+    <string name="achievement_sherlock_is_my_middle_name">CgkI2dyJs64VEAIQEQ</string>
+    <string name="achievement_its_something">CgkI2dyJs64VEAIQEA</string>
+    <string name="achievement_glass_half_full">CgkI2dyJs64VEAIQDw</string>
+    <string name="achievement_full_house">CgkI2dyJs64VEAIQBg</string>
+    <string name="achievement_first_timer">CgkI2dyJs64VEAIQAg</string>
+    <string name="achievement_time_level_2">CgkI2dyJs64VEAIQAw</string>
+    <string name="achievement_time_level_6">CgkI2dyJs64VEAIQDA</string>
+    <string name="achievement_time_level_9">CgkI2dyJs64VEAIQBA</string>
+    <string name="achievement_time_level_12">CgkI2dyJs64VEAIQBQ</string>
+    <string name="achievement_time_level_15">CgkI2dyJs64VEAIQCA</string>
+    <string name="achievement_time_level_18">CgkI2dyJs64VEAIQCQ</string>
+    <string name="achievement_time_level_21">CgkI2dyJs64VEAIQCg</string>
+    <string name="achievement_play_5_games">CgkI2dyJs64VEAIQCw</string>
+    <string name="achievement_play_50_games">CgkI2dyJs64VEAIQDQ</string>
+    <string name="achievement_play_500_games">CgkI2dyJs64VEAIQDg</string>
+    <string name="achievement_click_click_time_time">CgkI2dyJs64VEAIQEw</string>
+    <string name="achievement_button_pusher">CgkI2dyJs64VEAIQEg</string>
+    <string name="achievement_master_of_time">CgkI2dyJs64VEAIQFA</string>
+    <string name="achievement_marty_mcfly">CgkI2dyJs64VEAIQFQ</string>
+    <string name="achievement_best_game_250">CgkI2dyJs64VEAIQHA</string>
+    <string name="achievement_best_game_500">CgkI2dyJs64VEAIQFg</string>
+    <string name="achievement_best_game_1000">CgkI2dyJs64VEAIQFw</string>
+    <string name="achievement_best_game_2000">CgkI2dyJs64VEAIQGA</string>
+    <string name="achievement_best_game_4000">CgkI2dyJs64VEAIQGQ</string>
+    <string name="achievement_best_game_5000">CgkI2dyJs64VEAIQGg</string>
+    <string name="achievement_over_9000">CgkI2dyJs64VEAIQGw</string>
+    <string name="achievement_perfect_timing">CgkI2dyJs64VEAIQHQ</string>
+</resources>
