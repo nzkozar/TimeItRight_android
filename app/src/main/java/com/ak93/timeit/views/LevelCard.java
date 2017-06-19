@@ -42,9 +42,9 @@ public class LevelCard extends RelativeLayout {
         int padding = dpToPx(5);
         setPadding(padding,padding,padding,padding);
 
-        this.levelText = (FontView)findViewById(R.id.levelText);
-        this.scoreText = (FontView)findViewById(R.id.scoreText);
-        this.starView = (ImageView)findViewById(R.id.scoreStars);
+        this.levelText = findViewById(R.id.levelText);
+        this.scoreText = findViewById(R.id.scoreText);
+        this.starView = findViewById(R.id.scoreStars);
     }
 
     public void setLevelText(String string){

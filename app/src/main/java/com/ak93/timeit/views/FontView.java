@@ -5,16 +5,16 @@ import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.ak93.timeit.R;
+
+import timber.log.Timber;
 
 /**
  * Created by Anže Kožar on 26.9.2016.
  */
 
-public class FontView extends TextView {
-    private static final String TAG = "FontView";
+public class FontView extends android.support.v7.widget.AppCompatTextView {
 
     public FontView(Context context) {
         super(context);
@@ -39,14 +39,15 @@ public class FontView extends TextView {
 
     public boolean setCustomFont(Context ctx, String asset) {
         Typeface typeface = null;
-        try {
-            typeface = Typeface.createFromAsset(ctx.getAssets(), asset);
-        } catch (Exception e) {
-            Log.e(TAG, "Unable to load typeface: "+e.getMessage());
-            return false;
+        if(asset!=null && !asset.equals("")) {
+            try {
+                typeface = Typeface.createFromAsset(ctx.getAssets(), asset);
+            } catch (Exception e) {
+                Timber.e("Unable to load typeface: " + e.getMessage());
+                return false;
+            }
         }
-
-        setTypeface(typeface);
+        if(typeface!=null)setTypeface(typeface);
         return true;
     }
 }

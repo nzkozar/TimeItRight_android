@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="100dp"
     android:layout_height="100dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,7 +12,7 @@
             android:id="@+id/levelText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1"
+            tools:text="1"
             android:textColor="@color/color_text_light"
             android:textSize="10pt"
             android:layout_alignParentTop="true"
@@ -24,7 +24,7 @@
             android:id="@+id/scoreText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3566/5000"
+            tools:text="3566/5000"
             android:textColor="@color/color_text_light"
             android:textSize="6pt"
             android:layout_alignParentBottom="true"
