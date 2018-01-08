@@ -9,7 +9,3 @@ Available on Google Play: https://play.google.com/store/apps/details?id=com.ak93
 
 This project demonstrates building of a game, completely in Android envirnonment.
 It includes implementation of AdMob ad banners and Google Play Games login & achievements.
-
-Notes:
-*For security reasons a file containing all Google Play Games ids (for example app_id and achievement ids) is not present in this repository.
-The omitted file is named "games-ids.xml"
