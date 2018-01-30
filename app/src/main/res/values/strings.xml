@@ -2,11 +2,11 @@
     <string name="app_name">Time It Right</string>
 
     <!-- AdMob -->
-    <string name="admob_app_id">!ad_mob_app_id_here!</string>
-    <string name="banner_ad_levels_id">!ad_mob_ad_id_here!</string>
-    <string name="banner_ad_interlevel_id">!ad_mob_ad_id_here!</string>
-    <string name="banner_ad_halloftime_id">!ad_mob_ad_id_here!</string>
-    <string name="banner_ad_home_id">!ad_mob_ad_id_here!</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-5244424663522296~7960531961</string>
+    <string name="banner_ad_levels_id" translatable="false">ca-app-pub-5244424663522296/9561138767</string>
+    <string name="banner_ad_interlevel_id" translatable="false">ca-app-pub-5244424663522296/6350320361</string>
+    <string name="banner_ad_halloftime_id" translatable="false">ca-app-pub-5244424663522296/6210719568</string>
+    <string name="banner_ad_home_id" translatable="false">ca-app-pub-5244424663522296/5475689568</string>
     
     <!-- Main preferences -->
     <string name="main_preferences">com.ak93.timeit.main_preferences</string>

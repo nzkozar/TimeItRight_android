@@ -45,8 +45,6 @@ public class HallOfTime extends Activity implements AppConstants,
     // Client used to interact with Google APIs.
     private GoogleApiClient mGoogleApiClient;
 
-    private static final String TAG = "HallOfTime";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -124,6 +122,7 @@ public class HallOfTime extends Activity implements AppConstants,
 
         long averageTimerTotalScore = scorePreferences.getLong(getString(R.string.KEY_AVERAGE_TIMER_TOTAL_SCORE),0);
         long averageTimerTotalTimers = scorePreferences.getLong(getString(R.string.KEY_AVERAGE_TIMER_TOTAL_TIMERS),1);
+        if(averageTimerTotalTimers==0)averageTimerTotalTimers = 1;
         int averageTimerScore = (int)(averageTimerTotalScore/averageTimerTotalTimers);
 
         bestScoreText.setText(String.valueOf(bestScore));

@@ -96,11 +96,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/Style_HomeScreenButton"
+            android:visibility="invisible"
             >
 
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/button_sign_in"
-                style="@style/SignInButton"/>
+                style="@style/SignInButton"
+                />
         </LinearLayout>
     </LinearLayout>
 

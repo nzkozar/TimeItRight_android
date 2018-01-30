@@ -2,6 +2,7 @@ package com.ak93.timeit;
 
 import android.app.Application;
 
+import io.branch.referral.Branch;
 import timber.log.Timber;
 
 /**
@@ -18,6 +19,13 @@ public class TimeItApp extends Application {
 
         Timber.plant(new Timber.DebugTree());
         Timber.i("onCreate()");
+
+        // Branch logging for debugging
+        Branch.enableLogging();
+
+        // Branch object initialization
+        Branch.getAutoInstance(this);
+
     }
 
     public static TimeItApp getInstance() {

@@ -61,7 +61,8 @@ public class TutorialActivity extends Activity implements AppConstants, View.OnC
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
-                .addApi(Games.API).addScope(Games.SCOPE_GAMES)
+                .addApi(Games.API)
+                .addScope(Games.SCOPE_GAMES)
                 .build();
 
         setContentView(R.layout.activity_tutorial);

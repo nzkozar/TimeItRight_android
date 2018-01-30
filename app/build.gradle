@@ -6,10 +6,10 @@ android {
 
     defaultConfig {
         applicationId "com.ak93.timeit"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 26
-        versionCode 10
-        versionName "0.7.6"
+        versionCode 13
+        versionName "0.7.7"
     }
     buildTypes {
         release {
@@ -22,6 +22,7 @@ android {
 ext{
     support_version = '26.1.0'
     timber_version = '4.5.1'
+    gms_library_version = '11.8.0'
 }
 
 dependencies {
@@ -30,10 +31,13 @@ dependencies {
     compile "com.android.support:appcompat-v7:$support_version"
     compile "com.android.support:design:$support_version"
 
-    compile 'com.google.android.gms:play-services-games:11.8.0'
+    implementation "com.google.android.gms:play-services-games:$gms_library_version"
+    implementation "com.google.android.gms:play-services-auth:$gms_library_version"
     compile 'com.google.firebase:firebase-ads:11.8.0'
 
     compile "com.jakewharton.timber:timber:$timber_version"
+
+    compile 'io.branch.sdk.android:library:2.+'
 }
 
 apply plugin: 'com.google.gms.google-services'
